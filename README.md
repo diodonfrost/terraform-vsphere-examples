@@ -5,7 +5,7 @@ Terraform is a tool for building, changing, and versioning infrastructure safely
 Version used:
 *   Terraform 0.11.2
 
-## Openstack authentification
+## Vsphere authentification
 The vsphere provider is used to interact with the many resources supported by vsoere. The provider needs to be configured with the proper credentials before it can be used.
 
 ```
