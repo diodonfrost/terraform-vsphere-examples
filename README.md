@@ -18,22 +18,22 @@ provider "vsphere" {
 
 ## Getting Started
 
-Before terraform apply you must download provider plugin:
+Before running Terraform operations, download plugins using the `terraform init` command.
 ```
 terraform init
 ```
 
-Display plan before apply manifest
+Show us what Terraform is going to do before runninng the operation.
 ```
 terraform plan
 ```
 
-Apply manifest
+Apply the plan that we just created, which will provision our VMs.
 ```
 terraform apply
 ```
 
-Destroy stack
+Destroy infrastructure we previously created.
 ```
 terraform destroy
 ```
