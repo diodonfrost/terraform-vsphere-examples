@@ -49,9 +49,9 @@ variable "dns_servers" {
 #
 variable "server1_vm_params" {
   default = {
-    hostname       = "server1"
-    vcpu           = "2"
-    ram            = "4096"
+    hostname = "server1"
+    vcpu     = "2"
+    ram      = "4096"
     # You can't set a datastore name with interspace
     disk_datastore = "datastore_test"
     disk_size      = "15"
@@ -60,12 +60,12 @@ variable "server1_vm_params" {
 
 variable "server1_network_params" {
   default = {
-    domain           = "test.local"
-    label            = "vm_network_1"
-    vlan_id          = "1"
-    ipv4_address     = "192.168.1.1"
-    prefix_length    = "24"
-    gateway          = "192.168.1.254"
+    domain        = "test.local"
+    label         = "vm_network_1"
+    vlan_id       = "1"
+    ipv4_address  = "192.168.1.1"
+    prefix_length = "24"
+    gateway       = "192.168.1.254"
   }
 }
 
@@ -75,9 +75,9 @@ variable "server1_network_params" {
 #
 variable "server2_vm_params" {
   default = {
-    hostname       = "server2"
-    vcpu           = "2"
-    ram            = "2048"
+    hostname = "server2"
+    vcpu     = "2"
+    ram      = "2048"
     # You can't set a datastore name with interspace
     disk_datastore = "datastore_test"
     disk_size      = "15"
@@ -86,11 +86,12 @@ variable "server2_vm_params" {
 
 variable "server2_network_params" {
   default = {
-    domain           = "test.local"
-    label            = "vm_network_1"
-    vlan_id          = "1"
-    ipv4_address     = "192.168.1.2"
-    prefix_length    = "24"
-    gateway          = "192.168.1.254"
+    domain        = "test.local"
+    label         = "vm_network_1"
+    vlan_id       = "1"
+    ipv4_address  = "192.168.1.2"
+    prefix_length = "24"
+    gateway       = "192.168.1.254"
   }
 }
+
