@@ -20,12 +20,12 @@ resource "vsphere_virtual_machine" "server1" {
 
   # Configure Disk
   disk {
-    name = "${var.server1_vm_params["hostname"]}.vmdk"
-    size = var.server1_vm_params["disk_size"]
+    label = "disk0"
+    size  = var.server1_vm_params["disk_size"]
   }
 
   disk {
-    name             = "disk-${var.server1_vm_params["hostname"]}.vmdk"
+    label            = "disk1"
     size             = var.server1_vm_params["disk_size"]
     unit_number      = "1"
     thin_provisioned = "true"

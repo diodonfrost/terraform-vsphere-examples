@@ -23,8 +23,8 @@ resource "vsphere_virtual_machine" "http_vm" {
   }
 
   disk {
-    name = "${var.http_base_hostname}${count.index + 1}.vmdk"
-    size = var.http_vm_params["disk_size"]
+    label = "disk0"
+    size  = var.http_vm_params["disk_size"]
   }
 
   # Define template and customisation params

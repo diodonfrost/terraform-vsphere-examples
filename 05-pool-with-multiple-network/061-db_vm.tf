@@ -23,8 +23,8 @@ resource "vsphere_virtual_machine" "db_vm" {
   }
 
   disk {
-    name = "${var.db_base_hostname}${count.index + 1}.vmdk"
-    size = var.db_vm_params["disk_size"]
+    label = "disk0"
+    size  = var.db_vm_params["disk_size"]
   }
 
   # Define template and customisation params
